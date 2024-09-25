@@ -1,21 +1,115 @@
+# Общее описание
+В этом репозитории содержиться калькулятор площадей и периметров примитивных геометрических фигур.
 
-# How to use calculator:
-1. Run `python calculate.py`
-2. Enter the figure name. Available are Circle, Square.
-3. Enter the function: Area or Perimeter.
-4. Enter figure sizes. Radius for circle, one side for square.
-5. Get the answer!
+# Функции
 
-# Math formulas
-## Area
+## Calculate
+
+### calc(fig, func, size)
+Выводит результат вычислений в зависимости от входных данных.
+
+#### Входное значение:
+fig (string) : фигура, над которой совершается действие
+func (string) : действие
+size (string) : размер фигуры
+
+#### Выходное значение:
+* (void)
+
+## Circle
+
+### area(r)
+Возвращает площадь окружности в виде числа.
+
+#### Входное значение:
+r (int) : радиус окружности
+
+#### Выходное значение:
+area (float) : площадь окружности 
+
+### perimeter(r)
+Возвращает периметр окружности в виде числа.
+
+#### Входное значение:
+r (int) : радиус окружности
+
+#### Выходное значение:
+perimeter(float) : периметр окружности
+
+## Square
+
+### area(a)
+Возвращает площадь квадрата в виде числа.
+
+#### Входное значение:
+r (int) : сторона квадрата
+
+#### Выходное значение:
+area (int) : площадь квадрата
+
+### perimeter(a)
+Возвращает периметр квадрата в виде числа.
+
+#### Входное значение:
+r (int) : сторона квадрата
+
+#### Выходное значение:
+perimeter (int) : периметр квадрата
+
+## Triangle
+
+### area(a,b,c)
+Возвращает площадь треугольника в виде числа.
+
+#### Входное значение:
+a (int) : первая сторона
+b (int) : вторая сторона
+c (int) : третья сторона
+
+#### Выходное значение:
+area (float) : площадь треугольника
+
+### perimeter(a,b,c)
+Возвращает периметр треугольника в виде числа.
+#### Входное значение:
+a (int) : первая сторона
+b (int) : вторая сторона
+c (int) : третья сторона
+
+#### Выходное значение:
+perimeter (int) : периметр треугольника 
+
+# История изменений
+
+| Коммит | Хэш |
+| ------ | --- |
+| L-04: Update docs for calculate.py | b5b0fae |
+| L-04: Add calculate.py | d76db2a |
+| L-04: Doc updated for triangle | 51c40eb |
+| L-04: Triangle added | d080c78 |
+| L-03: Docs added | d078c8d |
+| L-03: Circle and square added | 8ba9aeb |
+
+
+
+# Как использовать калькулятор:
+1. Запусти `python calculate.py`
+2. Введи название фигуры. Доступны Circle, Square.
+3. Введи название функции: Area or Perimeter.
+4. Введи размеры фигуры. радиус для circle, сторону для square.
+5. Получи результат!
+
+# Математические формулы
+## Площадь
 - Circle: `S = πR²`
 - Rectangle: `S = ab`
 - Square: `S = a²`
-- Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` where p is semiperimeter
+- Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` где p - полупериметр
 
-## Perimeter
+## Периметр
 - Circle: `P = 2πR`
 - Rectangle: `P = 2a + 2b`
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
+
 
