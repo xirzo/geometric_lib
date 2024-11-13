@@ -1,3 +1,6 @@
+import math
+
+
 def area(a, b, c):
     """
     Возвращает площадь треугольника в виде числа.
@@ -10,7 +13,9 @@ def area(a, b, c):
     Выходное значение:
         area (float) : площадь треугольника
     """
-    return (a + b + c) / 2
+    p = (a + b + c) / 2
+    area = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    return area
 
 
 def perimeter(a, b, c):
